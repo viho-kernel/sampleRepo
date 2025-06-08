@@ -1,0 +1,13 @@
+name: sample Build
+
+on: push
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run Hello
+        run : echo "Hello Mawa"
